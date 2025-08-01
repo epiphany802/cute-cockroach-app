@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+.controls {
+    text-align: center;
+    margin-bottom: 20px;
+    z-index: 1000;
+    position: relative;
+}
+
+.controls button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    margin: 0 10px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.controls button:hover {
+    background: #ff5252;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+.controls span {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    margin-left: 20px;
+}
+
+#playground {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 120px);
+    overflow: hidden;
+}
+
+.cockroach {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    z-index: 100;
+}
+
+.cockroach:hover {
+    transform: scale(1.2);
+}
+
+.cockroach img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* 可爱的蟑螂CSS动画 */
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(8deg) scale(1.05); }
+    75% { transform: rotate(-8deg) scale(1.05); }
+}
+
+.cockroach.wiggle {
+    animation: wiggle 0.4s ease-in-out;
+}
+
+/* 点击效果 */
+@keyframes pop {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.4) rotate(15deg); }
+    60% { transform: scale(0.9) rotate(-10deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+.cockroach.clicked {
+    animation: pop 0.4s ease;
+}
+
+/* 恐惧状态动画 */
+@keyframes scared {
+    0%, 100% { filter: brightness(1.2); }
+    50% { filter: brightness(0.8) hue-rotate(20deg); }
+}
+
+.cockroach.scared {
+    animation: scared 0.3s ease-in-out infinite;
+}
+
+/* 暂停状态动画 */
+@keyframes pause-breath {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
+.cockroach.paused {
+    animation: pause-breath 2s ease-in-out infinite;
+}
+
+/* 添加阴影效果 */
+.cockroach {
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+    transition: filter 0.2s ease;
+}
+
+.cockroach:hover {
+    filter: drop-shadow(3px 3px 6px rgba(0,0,0,0.4)) brightness(1.1);
+}

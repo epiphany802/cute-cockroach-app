@@ -1,0 +1,44 @@
+<svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+  <!-- 可爱的小蟑螂 -->
+  
+  <!-- 身体 -->
+  <ellipse cx="20" cy="22" rx="8" ry="12" fill="#8B4513" stroke="#654321" stroke-width="1"/>
+  
+  <!-- 头部 -->
+  <circle cx="20" cy="12" r="6" fill="#A0522D" stroke="#654321" stroke-width="1"/>
+  
+  <!-- 眼睛 -->
+  <circle cx="17" cy="10" r="2" fill="white"/>
+  <circle cx="23" cy="10" r="2" fill="white"/>
+  <circle cx="17" cy="10" r="1" fill="black"/>
+  <circle cx="23" cy="10" r="1" fill="black"/>
+  
+  <!-- 眼睛高光 -->
+  <circle cx="17.5" cy="9.5" r="0.3" fill="white"/>
+  <circle cx="23.5" cy="9.5" r="0.3" fill="white"/>
+  
+  <!-- 触角 -->
+  <line x1="16" y1="8" x2="14" y2="5" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="24" y1="8" x2="26" y2="5" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <circle cx="14" cy="5" r="0.8" fill="#654321"/>
+  <circle cx="26" cy="5" r="0.8" fill="#654321"/>
+  
+  <!-- 腿部 -->
+  <!-- 左侧腿 -->
+  <line x1="14" y1="18" x2="8" y2="16" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="14" y1="22" x2="7" y2="22" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="14" y1="26" x2="8" y2="28" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 右侧腿 -->
+  <line x1="26" y1="18" x2="32" y2="16" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="26" y1="22" x2="33" y2="22" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="26" y1="26" x2="32" y2="28" stroke="#654321" stroke-width="1.5" stroke-linecap="round"/>
+  
+  <!-- 身体纹理 -->
+  <ellipse cx="20" cy="20" rx="5" ry="2" fill="#654321" opacity="0.3"/>
+  <ellipse cx="20" cy="25" rx="4" ry="1.5" fill="#654321" opacity="0.3"/>
+  
+  <!-- 可爱的腮红 -->
+  <circle cx="15" cy="13" r="1.5" fill="#FFB6C1" opacity="0.6"/>
+  <circle cx="25" cy="13" r="1.5" fill="#FFB6C1" opacity="0.6"/>
+</svg>
